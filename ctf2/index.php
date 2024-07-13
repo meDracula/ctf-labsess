@@ -35,10 +35,10 @@
         <div class="container-fluid">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Path Traversal</h3>
+                    <h3 class="panel-title">Content Discovery</h3>
                 </div>
                 <div class="panel-body">
-                    There is a secret endpoint, that only hacker goblins knowns!
+                    There is a secret site, that only hacker goblins knowns!
                 </div>
             </div>
         </div>
