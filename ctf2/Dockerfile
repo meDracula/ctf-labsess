@@ -10,6 +10,7 @@ RUN rm -rf /var/www/html/admin \
     /var/www/html/index.php
 
 COPY admin /var/www/html/admin
+COPY secret /var/www/html/secret
 COPY index.php /var/www/html/index.php
 
 COPY --chmod=755 server.sh /

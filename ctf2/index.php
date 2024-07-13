@@ -31,6 +31,18 @@
                 </div>
             </div>
         </div>
+        <!-- Challenge #2 -->
+        <div class="container-fluid">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Path Traversal</h3>
+                </div>
+                <div class="panel-body">
+                    There is a secret endpoint, that only hacker goblins knowns!
+                </div>
+            </div>
+        </div>
+        <!-- TODO Challenge #3 Reverse Shell -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>

@@ -11,3 +11,8 @@ Due to some inherent weaknesses in PHP's comparisons, NULL == 0 will return true
  curl -X POST --data "username=admin&password[]=%22%22&submit=Login" http://127.0.0.1/admin/index.php
 ```
 
+## Challenge 2
+Use a Web Content Scanner to perform a dictionary-based attack against a web server. 
+```sh
+dirb http://127.0.0.1 /usr/share/wordlists/dirb/common.txt
+```
