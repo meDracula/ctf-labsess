@@ -54,7 +54,7 @@ root	ALL=(ALL:ALL) ALL
 %sudo	ALL=(ALL:ALL) ALL
 
 # Allow program
-steve ALL=(root) NOPASSWD: /usr/bin/find
+brutus ALL=(root) NOPASSWD: /usr/bin/find
 
 # See sudoers(5) for more information on "@include" directives:
 

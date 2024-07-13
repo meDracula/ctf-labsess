@@ -8,11 +8,11 @@ COPY flag.txt /root/flag.txt
 
 # Setup User Steve
 # Add a user for ssh
-RUN useradd -rm -d /home/steve -s /bin/bash -g root -G sudo -u 1001 steve 
+RUN useradd -rm -d /home/brutus -s /bin/bash -g root -G sudo -u 1001 brutus 
  # Assign a password to the user for ssh
-RUN echo 'steve:qwertyuiop' | chpasswd
+RUN echo 'brutus:qwertyuiop' | chpasswd
 # Working Directory
-WORKDIR /home/steve
+WORKDIR /home/brutus
 
 # Add 
 COPY --chmod=440 sudoers /etc/sudoers
