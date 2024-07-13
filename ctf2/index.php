@@ -18,7 +18,7 @@
         <div class="container-fluid">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Strcmp Bypass</h3>
+                    <h3 class="panel-title">Authentication Bypass</h3>
                 </div>
                 <div class="panel-body">
                     The idiot Albin have created a website where he store his secrets... Unfortunately, we cant login into his website 🙀
