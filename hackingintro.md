@@ -14,4 +14,3 @@ CTF 2
 
 CTF 3
 1. Port Scanning -> 27017
-
