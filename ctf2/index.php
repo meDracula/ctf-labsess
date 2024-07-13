@@ -42,7 +42,21 @@
                 </div>
             </div>
         </div>
-        <!-- TODO Challenge #3 Reverse Shell -->
+        <!-- Challenge #3 -->
+        <div class="container-fluid">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Reverse Shell</h3>
+                </div>
+                <div class="panel-body">
+                    This idiot again, came by with a new site.
+                    I don't known why but I am getting a bad feeling about this one 😈
+                </div>
+                <div class="panel-footer">
+                    <a href="/shell/index.php" target="_blank" class="btn btn-success">Start here</a>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>

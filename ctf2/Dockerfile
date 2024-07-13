@@ -9,9 +9,14 @@ RUN rm -rf /var/www/html/admin \
     /var/www/html/bypass \
     /var/www/html/index.php
 
-COPY admin /var/www/html/admin
-COPY secret /var/www/html/secret
+# Main index page
 COPY index.php /var/www/html/index.php
+# Setup challange 1 Authentication Bypass
+COPY admin /var/www/html/admin
+# Setup challange 2 Path Traversal
+COPY secret /var/www/html/secret
+# Setup challange 3 Reverse Shell
+COPY shell /var/www/html/shell/index.php
 
 COPY --chmod=755 server.sh /
 ENTRYPOINT ["/server.sh"]
