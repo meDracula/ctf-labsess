@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
 
 RUN useradd -M steve # Add a user for ssh
-RUN echo 'steve:keyissecret' | chpasswd # Assign a password to the user for ssh
+RUN echo 'steve:qwertyuiop' | chpasswd # Assign a password to the user for ssh
 
 # SSH login fix. Otherwise user is kicked off after login
 RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
