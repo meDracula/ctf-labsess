@@ -1,16 +1,18 @@
 # CTF 1: SSH Brutus
 
-**Requirement**:
-- docker
-- nmap
-- hydra
-- wordlist rockyou.txt
+## Requirements
+- [nmap](https://nmap.org/)
+- [hydra](https://www.kali.org/tools/hydra/)
+- [wordlists](https://www.kali.org/tools/wordlists/) -> rockyou.txt
+
+## About Categorize
+- Brute Force
+- Privilege escalation
 
 ## Plan of Engagement
 1. Port Scanning -> 22
 2. SSH Exploit (brute force)
 3. Privilege escalation with sudo find to root
-
 
 ## External Resources
 - [GTFOBins](https://gtfobins.github.io/)
