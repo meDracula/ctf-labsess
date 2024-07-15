@@ -5,7 +5,7 @@
 - [hydra](https://www.kali.org/tools/hydra/)
 - [wordlists](https://www.kali.org/tools/wordlists/) -> rockyou.txt
 
-## About Categorize
+## General techniques
 - Port Scanning
 - Brute Force
 - Privilege escalation
