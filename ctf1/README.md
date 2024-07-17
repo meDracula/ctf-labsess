@@ -23,7 +23,7 @@ For this CTF the recommendation is the classic [Nmap](https://nmap.org/).
 ## Brute Force
 A Brute force attack is a method of exhausting every possible item or combination in a list to guess the correct credentials.
 
-Commonly and easily understood when brute forcing passwords.
+Commonly used when brute forcing a user's password.
 Such as attempting login in to a user by using a list of passwords to hopefully provide the correct credentials to gain access.
 
 A tool great for login cracking that provides simple, flexible and parallelized brute force attacks is [Hydra](https://www.kali.org/tools/hydra/).
