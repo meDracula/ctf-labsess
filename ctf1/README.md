@@ -33,23 +33,24 @@ This tool supports multiple protocols but in this engagement, as the name of the
 Privilege escalation is using a design flaw, misconfiguration or bug to gain unauthorized privileged access into a system.
 
 There are two primary types of privilege escalation:
-1. Horizontal privilge escalation
-2. Vertical privilege escalation
+1. Horizontal privilege escalation, gaining access to accounts with privileges similar to the original compromised account.
+2. Vertical privilege escalation, a user account with more privileges to the compromised lower-level account.
 
-With **horizontal privilege escalation**, a user account or process has already been compromised by the attacker.
-But through some means, using horizontal another user account with a similar level of privileges can be gained.
+Privilege escalation often with Linux is the goal to gain `root` access to full compromise the system.
+But knowing what the exploit is, always requires research into the compromised system and its design and configuration.
 
-With **vertical privilege escalation**, a user account with greater privileges is compromised by a lower-level user account.
-This can be done by a multitude of means. It all depends on the system and its design and configuration.
-
-In short, horizontal privilege escalation involves gaining access to accounts with privileges similar to the original accounts.
-By contrast, vertical privilege involves gaining access to accounts with more privileges and permissions.
+One tool often found and worth looking at for this CTF would be `sudo`.
 
 ### Sudo
-### External Resources
-- [GTFOBins](https://gtfobins.github.io/)
-- 
+Sudo - "execute a command as another user" [man sudo](https://www.man7.org/linux/man-pages/man8/sudo.8.html).
+Sudo provides a user to run a command default configuration is to run as root.
+Sudo is configured in a file called [sudoers](https://www.man7.org/linux/man-pages/man5/sudoers.5.html) default location `/etc/sudoers`.
 
+When looking for privileges escalations on Linux binaries a good easy to use search engine would be: [GTFOBins](https://gtfobins.github.io/).
 
 ## Resources
-- [CrowdStrike ]
+- [YT: Network Port Explained](https://www.youtube.com/watch?v=g2fT-g9PX9o)
+- [CrowdStrike Privilege Escalation](https://www.crowdstrike.com/cybersecurity-101/privilege-escalation/)
+- [Sudoers](https://www.man7.org/linux/man-pages/man5/sudoers.5.html)
+- [GTFOBins](https://gtfobins.github.io/)
+- [man sudo](https://www.man7.org/linux/man-pages/man8/sudo.8.html)
