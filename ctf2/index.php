@@ -18,6 +18,17 @@
         <div class="container-fluid">
             <div class="panel panel-default">
                 <div class="panel-heading">
+                    <h3 class="panel-title">Content Discovery</h3>
+                </div>
+                <div class="panel-body">
+                    There is a secret site, that only site explorers knowns!
+                </div>
+            </div>
+        </div>
+        <!-- Challenge #2 -->
+        <div class="container-fluid">
+            <div class="panel panel-default">
+                <div class="panel-heading">
                     <h3 class="panel-title">Authentication Bypass</h3>
                 </div>
                 <div class="panel-body">
@@ -28,17 +39,6 @@
                 <div class="panel-footer">
                     <a href="/admin/index.php" target="_blank" class="btn btn-success">Start here</a>
                     <a href="/admin/index.php?debug" target="_blank" class="btn btn-primary">Source code</a>
-                </div>
-            </div>
-        </div>
-        <!-- Challenge #2 -->
-        <div class="container-fluid">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Content Discovery</h3>
-                </div>
-                <div class="panel-body">
-                    There is a secret site, that only hacker goblins knowns!
                 </div>
             </div>
         </div>
