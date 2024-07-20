@@ -20,7 +20,7 @@ COPY --chmod=440 sudoers /etc/sudoers
 # Start SSH
 RUN service ssh start
 
-# TODO Change port from 22
-EXPOSE 22
+# Expose SSH Port running on 666
+EXPOSE 666
 
-CMD ["/usr/sbin/sshd","-D"]
+CMD ["/usr/sbin/sshd","-D", "-p 666"]
