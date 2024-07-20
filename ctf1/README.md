@@ -30,6 +30,26 @@ A tool great for login cracking that provides simple, flexible and parallelized 
 This tool supports multiple protocols but in this engagement, as the name of the CTF (SSH Brutus) can be guessed that it will be using SSH protocol.
 
 ## Privilege escalation
+Privilege escalation is using a design flaw, misconfiguration or bug to gain unauthorized privileged access into a system.
+
+There are two primary types of privilege escalation:
+1. Horizontal privilge escalation
+2. Vertical privilege escalation
+
+With **horizontal privilege escalation**, a user account or process has already been compromised by the attacker.
+But through some means, using horizontal another user account with a similar level of privileges can be gained.
+
+With **vertical privilege escalation**, a user account with greater privileges is compromised by a lower-level user account.
+This can be done by a multitude of means. It all depends on the system and its design and configuration.
+
+In short, horizontal privilege escalation involves gaining access to accounts with privileges similar to the original accounts.
+By contrast, vertical privilege involves gaining access to accounts with more privileges and permissions.
+
 ### Sudo
 ### External Resources
 - [GTFOBins](https://gtfobins.github.io/)
+- 
+
+
+## Resources
+- [CrowdStrike ]
