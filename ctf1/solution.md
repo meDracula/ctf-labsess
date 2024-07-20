@@ -7,7 +7,7 @@
 ## Solution
 Nmap port scan:
 ```sh
-sudo nmap -sS -sC -p- 127.0.0.1 -vv
+sudo nmap -sS -sV -p- 127.0.0.1 -vv
 ```
 
 Crack password:
